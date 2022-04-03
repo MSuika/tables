@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: yellowgreen;
+    padding: 10px;
+}
+
+table {
+    border: 3px solid red;
+    border-collapse: collapse;
+    /* kai dubliuojas table eilutes galim imest collapse */
+    margin: 30px auto;
+    max-width: 600px;
+}
+
+td,th {
+    border: 1px solid black;
+    padding: 15px;
+    font-family: montserrat;
+    width: 150px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.orange {
+    background: orange;
+    font-size: 1.4em;
+}
+/* nth-of-type style */
+
+table:nth-last-of-type(2){
+    background: orange;
+    border: none;
+    color: white;
+}
+
+table:nth-last-of-type(1) th{
+    background: red;
+    border: none;
+    color: white;
+}
+
+table:nth-last-of-type(2) td{
+    background: orange;
+    color: white;
+    border: none;
+}
+
+table:nth-last-of-type(2) .orange{
+    background: rgb(92, 92, 92);
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
